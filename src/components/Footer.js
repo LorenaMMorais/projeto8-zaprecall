@@ -24,9 +24,8 @@ function AddIcone(resposta){
     }
 }
 export default function Footer(props){
-
     const{tamanhoDeck} =props;
-    console.log(tamanhoDeck);
+
     return(
         <footer>
             <p>0/{tamanhoDeck} CONCLUÍDOS</p>
