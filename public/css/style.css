@@ -115,6 +115,7 @@ header h1{
     z-index: 0;
 }
 .cartao{
+    position: relative;
     width: 300px;
     height: 65px;
     padding:  6px 0 6px 15px;
@@ -130,13 +131,24 @@ header h1{
 .cartao ion-icon{
     width: 20px;
     height: 23px;
-
     color: #333333;
+}
+.cartao-pergunta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cartao-pergunta img{
+    width: 30px;
+    height: 20px;
+    position: absolute;
+    bottom: 6px;
+    right: 15px;
 }
 .cartao-resposta{
     display: flex;
     flex-direction: column;
-    gap:5px;
+    gap: 5px;
 }
 .cartao-resposta p{
     width: 247px;
@@ -245,4 +257,13 @@ footer p{
     font-size: 18px;
     line-height: 22px;
     color: #333333;
+}
+.vermelho{
+    text-decoration-line: line-through #FF3030;
+}
+.laranja{
+    text-decoration-line: line-through #FF922E;
+}
+.verde{
+    text-decoration-line: line-through #2FBE34;
 }

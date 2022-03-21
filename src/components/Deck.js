@@ -12,11 +12,9 @@ export default function Deck(){
         {pergunta: "Usamos props para __", resposta: "passar diferentes informações para componentes "},
         {pergunta: "Usamos estado (state) para __", resposta: "dizer para o React quais informações quando atualizadas devem renderizar a tela novamente"}
     ];
-    perguntas.sort(embaralhar)
+    let tamanhoDeck = perguntas.length;
 
-    function embaralhar(){
-        return Math.random() - 0.5;
-    }
+    perguntas.sort(function(){ return Math.random() - 0.5});
 
     function opçaoPergunta(){
         for(let i = 0; i < perguntas.length; i++){
@@ -27,7 +25,7 @@ export default function Deck(){
     
     return (
         <div className="deck">
-            {perguntas.map(cartao => <Cartao key={cartao.questao} questao={cartao.questao} pergunta={cartao.pergunta} resposta={cartao.resposta}/>)}
+            {perguntas.map(cartao => <Cartao key={cartao.questao} questao={cartao.questao} pergunta={cartao.pergunta} resposta={cartao.resposta} tamanhoDeck={tamanhoDeck}/>)}
         </div>
     );
 }
