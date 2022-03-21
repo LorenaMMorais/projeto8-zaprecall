@@ -27,7 +27,7 @@ export default function Deck(){
     
     return (
         <div className="deck">
-            {perguntas.map(cartao => <Cartao questao={cartao.questao} pergunta={cartao.pergunta} resposta={cartao.resposta}/>)}
+            {perguntas.map(cartao => <Cartao key={cartao.questao} questao={cartao.questao} pergunta={cartao.pergunta} resposta={cartao.resposta}/>)}
         </div>
     );
 }

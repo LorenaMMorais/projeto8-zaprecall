@@ -117,7 +117,7 @@ header h1{
 .cartao{
     width: 300px;
     height: 65px;
-    padding-left: 15px;
+    padding:  6px 0 6px 15px;
     gap: 163px;
     
     display: flex;
@@ -125,6 +125,81 @@ header h1{
 
     background: #FFFFFF;
     box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+}
+.cartao ion-icon{
+    width: 20px;
+    height: 23px;
+
+    color: #333333;
+}
+.cartao-resposta{
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+}
+.cartao-resposta p{
+    width: 247px;
+    font-family: 'Recursive';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #333333;
+}
+.auto-avaliacao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: inline;
+    gap: 7.74px;
+}
+.auto-avaliacao p{
+    width: 75.88px;
+    height: 37.17px;
+
+    font-family: 'Recursive';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+.nao-lembrei{
+    width: 85.17px;
+    height: 37.17px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #FF3030;
+    border-radius: 5px;
+}
+.quase{
+    width: 85.17px;
+    height: 37.17px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #FF922E;
+    border-radius: 5px;
+}
+.zap{
+    width: 85.17px;
+    height: 37.17px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #2FBE34;
     border-radius: 5px;
 }
 /* fim Main */
@@ -160,7 +235,8 @@ footer p{
     display: none;
 }
 .selecionado{
-    height: 131px;
+    min-height: 131px;
+    height: auto;
     background: #FFFFD5;    
 
     font-family: 'Recursive';
