@@ -1,0 +1,172 @@
+*{
+    box-sizing: border-box;
+}
+/******* tela 1*******/
+body{
+    font-family: 'Recursive', sans-serif;
+    font-family: 'Righteous', cursive;
+}
+.fundo-mobile{
+    width: 375px;
+    height: 100vh;
+    margin: 0px auto;
+    border: 1px solid #DBDBDB;
+    background: #FB6B6B;
+}
+.tela-inicial{
+    gap: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.logo{
+    gap: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.logo img{
+    width: 136px;
+    height: 161px;
+}
+.logo h1{    
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 45px;
+    /* display: flex;
+    align-items: center;
+    text-align: center; */
+    letter-spacing: -0.012em;
+    color: #FFFFFF;
+}
+button.botao-iniciar{
+    width: 246px;
+    height: 54px;
+
+    background: #FFFFFF;
+    border: 1px solid #D70900;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+
+    font-family: 'Recursive';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #D70900;
+}
+/*********Fim Tela1*********/
+
+/*********Tela2*********/
+
+/* Header */
+.tela-recall{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+header{
+    height: 153px;
+    
+    top: 0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: inline;
+    z-index: 1;
+}
+header img{
+    width: 52px;
+    height: 60px;
+}
+header h1{
+    width: 203.17px;
+    height: 44px;
+
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: -0.012em;
+
+    color: #FFFFFF;
+
+    transform: rotate(0.58deg);
+}
+/* fim Header */
+/* Main */
+.deck{
+    /* position: absolute; */
+    padding-bottom: 95px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    z-index: 0;
+}
+.cartao{
+    width: 300px;
+    height: 65px;
+    padding-left: 15px;
+    gap: 163px;
+    
+    display: flex;
+    align-items: center;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+}
+/* fim Main */
+/* Footer */
+footer{
+    position: fixed;
+    width: 375px;
+    height: 70px;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
+}
+footer p{
+    width: 145px;
+    height: 22px;
+
+    font-family: 'Recursive';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+
+
+    color: #333333;
+}
+/* fim Footer */
+/*********Fim Tela2*********/
+.escondido{
+    display: none;
+}
+.selecionado{
+    height: 131px;
+    background: #FFFFD5;    
+
+    font-family: 'Recursive';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #333333;
+}
